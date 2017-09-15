@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+{%include "header.html"%}
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <div class="container1" style="height:100%">
+    {%include "navbar.html"%}
+    <header class="intro face">
+        <div class="intro-body">
+            <span class="container">
+                <span class="row">
+                    <span class="col-md-8 col-md-offset-2" style="">
+                           <a href="/contact"> <h1 class="brand-heading">Jessica Chen Fan</h1></a>
+                    </span>
+                </span>
+            </span>
+        </div>
+    </header>
+<script>window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+    t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+ 
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+ 
+  return t;
+}(document, "script", "twitter-wjs"));</script>
+<div id="particles-js" style="opacity: 0.48;"> </div>
+</div>
+
+<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+<script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+<script type="text/javascript">
+    particlesJS("particles-js", {
+      "particles": {
+        "number": {
+          "value": 188,
+          "density": {
+            "enable": true,
+            "value_area": 1042.21783956259
+          }
+        },
+        "color": {
+          "value": "#969696"
+        },
+        "shape": {
+          "type": "circle",
+          "stroke": {
+            "width": 0,
+            "color": "#000000"
+          },
+          "polygon": {
+            "nb_sides": 3
+          },
+         
+        },
+        "opacity": {
+          "value": 0.6,
+          "random": false,
+          "anim": {
+            "enable": false,
+            "speed": 0,
+            "opacity_min": 0.5116086437498474,
+            "sync": false
+          }
+        },
+        "size": {
+          "value": 0,
+          "random": true,
+          "anim": {
+            "enable": false,
+            "speed": 40,
+            "size_min": 0.1,
+            "sync": false
+          }
+        },
+        "line_linked": {
+          "enable": true,
+          "distance": 230,
+          "color": "#b14949",
+          "opacity": 0.16034120608655228,
+          "width": 1
+        },
+        "move": {
+          "enable": true,
+          "speed": 3.2,
+          "direction": "none",
+          "random": false,
+          "straight": false,
+          "out_mode": "out",
+          "bounce": false,
+          "attract": {
+            "enable": false,
+            "rotateX": 8898.936937803652,
+            "rotateY": 1282.7296486924183
+          }
+        }
+      },
+      "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+          "onhover": {
+            "enable": false,
+            "mode": "grab"
+          },
+          "onclick": {
+            "enable": true,
+            "mode": "push"
+          },
+          "resize": true
+        },
+        "modes": {
+          "grab": {
+            "distance": 400,
+            "line_linked": {
+              "opacity": 1
+            }
+          },
+          "bubble": {
+            "distance": 400,
+            "size": 40,
+            "duration": 2,
+            "opacity": 8,
+            "speed": 3
+          },
+          "repulse": {
+            "distance": 200,
+            "duration": 0.4
+          },
+          "push": {
+            "particles_nb": 4
+          },
+          "remove": {
+            "particles_nb": 2
+          }
+        }
+      },
+      "retina_detect": true
+    });
+    var count_particles, stats, update;
+
+    count_particles = document.querySelector('.js-count-particles');
+    update = function() {
+      stats.begin();
+      stats.end();
+      if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+        count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+      }
+      requestAnimationFrame(update);
+    };
+    requestAnimationFrame(update);;
+
+</script>
+
+  {%include "bottom.html"%}
+</body>
+
+</html>

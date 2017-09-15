@@ -1,0 +1,46 @@
+
+::-moz-selection {
+    text-shadow: none;
+    background-color: #006090;
+    color: #fcf8e3;
+
+}
+
+::selection {
+    text-shadow: none;
+    background-color: #006090;
+    color: #fcf8e3;
+}
+
+.typedstuff {
+   text-align:center;
+}
+
+.carousel-control.left{
+    background-image:None;
+}
+.carousel-control.right{
+    background-image:None;
+}
+
+
+@media(min-width:768px) {
+    .thumbnail {
+	max-height:100px;
+    }
+}
+
+.face {
+    position: absolute;
+    overflow: hidden;
+}
+
+.art-summary {
+    padding-top: 3%;
+}
+
+.innerSummaryDiv {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+    
