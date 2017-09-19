@@ -1,5 +1,5 @@
 /*!
- * Shadowbox, version 4.0.0 <http://shadowbox-js.com/>
+ * Shadowbox, version 4.0.0 <https://shadowbox-js.com/>
  * Copyright 2014 Michael Jackson
  */
 
@@ -1004,7 +1004,7 @@
    * Parses the value of the data-shadowbox attribute which is a string
    * of key=value pairs separated by commas, e.g.:
    *
-   * "margin=40,url=http://example.com" => { margin: 40, url: "http://example.com" }
+   * "margin=40,url=https://example.com" => { margin: 40, url: "https://example.com" }
    */
   function parseData(data) {
     var hash = {};
@@ -1240,7 +1240,7 @@
   }
 
   // Event handling functions modified from originals by Dean Edwards.
-  // http://dean.edwards.name/my/events.js
+  // https://dean.edwards.name/my/events.js
 
   /**
    * Adds an event handler to the given element. The handler will be called

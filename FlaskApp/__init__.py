@@ -15,12 +15,11 @@ def about():
 def art():
 	arts_small = []
 	arts_big = []
-	app_dir = "/var/www/FlaskApp/FlaskApp/" 
-	img_folder = "/var/www/FlaskApp/FlaskApp/static/img/paintings"
+	init_dirname = os.path.dirname(os.path.abspath(__file__))
+	img_folder = os.path.join(init_dirname, "static/img/paintings")
 	for f in os.listdir(img_folder):
-		arts_small.append(os.path.join(img_folder, f).replace(app_dir, ""))
-		arts_big.append(os.path.join(img_folder, f).replace(app_dir, ""))
-		
+		arts_small.append(os.path.join(img_folder, f).replace(init_dirname, ""))
+		arts_big.append(os.path.join(img_folder, f).replace(init_dirname, ""))
         return render_template("art.html", photos_small=enumerate(arts_small), photos_big=enumerate(arts_big))
 
 @app.route("/contact")
