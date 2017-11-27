@@ -1,9 +1,12 @@
 FROM python:2.7
 
-COPY FlaskApp /
-RUN pip install virtualenv
-RUN pip install --no-cache-dir -r requirements.txt 
+ENV HOME=/home
 
-RUN chmod +x /start.sh
-CMD ["/start.sh"]
+COPY jfantom $HOME/jfantom
+RUN pip install -e $HOME/jfantom/
 
+ENTRYPOINT [ \
+    "gunicorn", \
+    "--bind", "0.0.0.0:8000", \
+    "--workers", "4", \
+    "main:app" ]
